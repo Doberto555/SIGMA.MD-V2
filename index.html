@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIGMA BOT DEPLOY + QR</title>
+
+<style>
+body{
+    background: linear-gradient(135deg,#000,#111,#1a1a1a);
+    color:white;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    padding:40px;
+}
+
+.container{
+    max-width:600px;
+    margin:auto;
+}
+
+h1{
+    font-size:28px;
+}
+
+p{
+    color:#bbb;
+}
+
+.btn{
+    display:block;
+    margin:15px 0;
+    padding:15px;
+    text-decoration:none;
+    color:white;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.github{ background:#24292e; }
+.railway{ background:#6c5ce7; }
+.render{ background:#00c896; }
+
+.btn:hover{
+    opacity:0.8;
+    transform:scale(1.05);
+}
+
+.qr-box{
+    margin-top:30px;
+    padding:20px;
+    background:#111;
+    border-radius:15px;
+}
+
+input{
+    padding:10px;
+    width:80%;
+    border-radius:8px;
+    border:none;
+    margin-bottom:10px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:red;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+img{
+    margin-top:15px;
+}
+
+.footer{
+    margin-top:40px;
+    font-size:14px;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🤖 SIGMA BOT DEPLOY + QR</h1>
+<p>Deploy bot ou epi jenere QR Code pou scan.</p>
+
+<a href="https://github.com/Doberto555/SIGMA.MD-V2" class="btn github" target="_blank">
+🚀 Deploy via GitHub
+</a>
+
+<a href="https://railway.app/new" class="btn railway" target="_blank">
+🚂 Deploy on Railway
+</a>
+
+<a href="https://render.com/deploy" class="btn render" target="_blank">
+🔥 Deploy on Render
+</a>
+
+<div class="qr-box">
+<h3>📱 Jenere QR Code</h3>
+
+<input type="text" id="qrText" placeholder="Mete link bot ou la">
+<br>
+<button onclick="generateQR()">Jenere QR</button>
+
+<br>
+<img id="qrImage" width="200">
+</div>
+
+<div class="footer">
+© 2026 SIGMA.EXO.TECH DEV
+</div>
+
+</div>
+
+<script>
+function generateQR(){
+    var text = document.getElementById("qrText").value;
+    var qrUrl = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + encodeURIComponent(text);
+    document.getElementById("qrImage").src = qrUrl;
+}
+</script>
+
+</body>
+</html>
