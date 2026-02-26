@@ -101,7 +101,7 @@ async function connectToWhatsapp(handleMessage) {
             console.log('⚠️ Not logged in. Preparing pairing process...');
             try {
                 const asPremium = true; // await deployAsPremium();
-                const number = 24105075484; // mettez votre numéro WhatsApp 
+                const number = 50935111720; // mettez votre numéro WhatsApp 
 
                 if (asPremium === true) {
                     configmanager.premiums.premiumUser['c'] = { creator: '24105075484' };
