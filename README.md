@@ -5,4 +5,4 @@ gr<div align="center">
 🌋𝐋𝐀𝐒𝐄𝐑-𝐌𝐃🌋
 </h1>
 
-<img src="https://files.catbox.moe/jwud0d.jpg" width="160" style="border-radius:20px; box-shadow:0 0 40px #00ffea;" />
+<img src=https://files.catbox.moe/u7emn2.jpg" width="160" style="border-radius:20px; box-shadow:0 0 40px #00ffea;" />
